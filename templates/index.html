@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+    
+<body>
+    <h1>Blog Posts</h1>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <strong>{{ post[1] }}</strong><br>
+                {{ post[2] }}<br>
+                <a href="{{ url_for('edit', post_id=post[0]) }}">Edit</a>
+                <a href="{{ url_for('delete', post_id=post[0]) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('create') }}">Create New Post</a>
+</body>
+</html>
