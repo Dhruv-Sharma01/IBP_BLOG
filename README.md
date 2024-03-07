@@ -17,8 +17,8 @@ This is a simple CRUD (Create, Read, Update, Delete) blog application built with
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Dhruv-Sharma01/flask-blog.git
-   cd flask-blog
+   git clone https://github.com/Dhruv-Sharma01/IBP_BLOG.git
+   cd IBP_BLOG
    ```
 
 2. Install the required dependencies:
