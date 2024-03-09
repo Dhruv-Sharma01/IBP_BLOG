@@ -11,6 +11,7 @@ This is a simple CRUD (Create, Read, Update, Delete) blog application built with
 - View a list of existing blog posts.
 - Edit existing blog posts.
 - Delete existing blog posts.
+```
 
 ## Installation
 
